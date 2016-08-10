@@ -12,6 +12,8 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -36,6 +38,7 @@ GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener{
     private GoogleApiClient mGoogleApiClient;
     private double mLatitude, mLongitude;
     private Location mLocation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
